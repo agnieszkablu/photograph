@@ -1,0 +1,181 @@
+@import "mixins";
+$font-f: 'Lato',sans-serif;
+$font-size: 1.8em;
+$text-font: 'Roboto', sans-serif;
+$basic-color: rgb(73, 85, 99);
+$text-color: rgb(250, 250, 250);
+$navbar-color: black(.1);
+$breakpointSmallScreen: 767px;
+$breakpointMediumScreen: 768px;
+$breakpointLargeScreen: 1200px;
+
+html{
+	height: 100%;
+}
+body{
+	font-family: $font-f;
+	font-size: $font-size;
+	height: 100%;
+}
+.container{
+	margin-bottom: 0;
+}
+/*-------------------------------------------------- */
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  
+	@media (min-width: $breakpointMediumScreen) {
+		 margin-top: 20px;
+	}
+	#navbar a{
+	  color: $text-color;
+  }
+ > .container {
+  padding-right: 0;
+  padding-left: 0;
+  	
+	@media (min-width: $breakpointMediumScreen) {
+  	padding-right: 15px;
+    padding-left: 15px;
+	}
+}
+.navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+  background: $navbar-color;
+  @include letterpress(.5);
+  border-color: $text-color;
+ 
+ @media (max-width: $breakpointSmallScreen) {
+		 background-color: black(.9);
+	}
+  @media (min-width: $breakpointMediumScreen) {
+  	padding-right: 0;
+    padding-left: 0;
+	border-radius: 4px;
+  }
+ a{
+	  color: $text-color;
+  }
+  .container {
+  width: auto;
+	}
+  }
+}
+ 
+.nav{
+	>li:last-child{
+		margin-left: 150px;
+	 
+	 @media (max-width: $breakpointLargeScreen){
+		margin-left: auto;
+	}
+	}
+}
+.dropdown-menu{
+
+ > li > a:hover,
+ > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: white(.3);
+}
+.dropdown-header{
+	text-shadow: none;
+	color:$text-color;
+}
+}
+/*-------------------------------------------------- */
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.carousel-caption {
+  z-index: 10;
+  position: absolute;
+  right: 15%;
+  bottom: 350px;        
+  left: 15%;
+   z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $text-color;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+
+	.btn {
+  	text-shadow: none;
+	background-color: $navbar-color;
+	}
+	
+	@media (max-width: $breakpointSmallScreen) {
+ 	bottom: 50px;
+	font-size: 80%;
+	
+	h2{ 
+	font-size: 1.8em;
+	font-weight: 600;
+	}
+	.btn {
+		font-size: 1em;
+	}
+	}
+	@media (min-width: $breakpointMediumScreen) and (max-width: $breakpointLargeScreen) {
+			bottom: 100px;	
+			font-size: 60%;
+	
+	h1{ 
+	
+	}
+	.btn {
+		font-size: 80%;
+	}
+		}
+		
+p{
+	@media (min-width: $breakpointMediumScreen) {
+		margin-bottom: 20px;
+		font-size: 21px;
+		line-height: 1.4;
+	}
+}
+}
+
+
+
+
+footer {
+    margin: -50px 0;
+	position: relative;
+	z-index: 10;
+	color: $text-color;
+	
+	a{
+		color: $text-color;
+	}
+	a:hover{
+		text-decoration: none;
+	}
+}
