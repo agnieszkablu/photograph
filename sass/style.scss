@@ -131,46 +131,54 @@ body{
 	}
 	
 	@media (max-width: $breakpointSmallScreen) {
- 	bottom: 50px;
-	font-size: 80%;
+ 	bottom: 150px;
+	font-size: 90%;
 	
 	h2{ 
-	font-size: 1.8em;
-	font-weight: 600;
+	
 	}
 	.btn {
-		font-size: 1em;
+		font-weight: 300;
 	}
 	}
 	@media (min-width: $breakpointMediumScreen) and (max-width: $breakpointLargeScreen) {
-			bottom: 100px;	
-			font-size: 60%;
+			bottom: 200px;	
+			font-size: 90%;
 	
-	h1{ 
-	
-	}
 	.btn {
-		font-size: 80%;
-	}
-		}
-		
-p{
-	@media (min-width: $breakpointMediumScreen) {
-		margin-bottom: 20px;
-		font-size: 21px;
-		line-height: 1.4;
-	}
-}
+		font-weight: 300;
+	 }
+    }
 }
 
-
+.carousel-indicators {
+	li{
+	@media (max-width: $breakpointSmallScreen) {
+		margin: 90px 0;
+		width: 18px;
+		height: 18px;
+	}
+	}
+	.active{
+		@media (max-width: $breakpointSmallScreen) {
+		margin: 90px 0;
+		width: 18px;
+		height: 18px;
+	}
+	}
+}
 
 
 footer {
-    margin: -50px 0;
+    margin: -50px 0 0 0;
 	position: relative;
 	z-index: 10;
 	color: $text-color;
+	
+	@media (max-width: $breakpointSmallScreen) {
+		margin: -40px 0 0 0;
+	}
+	
 	
 	a{
 		color: $text-color;

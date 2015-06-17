@@ -87,7 +87,7 @@
                 <!-- Set the second background image using inline CSS below. -->
                 <div class="fill" style="background-image: url(img/aga.jpg);" ></div>
                 <div class="carousel-caption">
-                  <h1>Portrety.</h1>
+                  <h2>Portrety.</h2>
                   <p>Piękniusie zdjęcia. Donec id elit non mi porta gravida at eget metus.</p>
                   <p><a class="btn btn-lg btn-primary" href="ludzie.html" role="button">Zobacz więcej zdjęć..</a></p>
 
@@ -111,18 +111,11 @@
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
         </a>
-
     </header>
-
       <!-- FOOTER -->
       <footer>
-  	  
-      <p class="visible-xs pull-right"><a href="#">Back to top</a></p> 
-      <p class="pull-left">&copy; 2015 <a href="http://www.bludesign.pl" target="_blank">bludesign.pl</a> &middot; <a href="#" target="_blank">Privacy</a> &middot; <a href="#" target="_blank">Terms</a></p>
-  	  
+      <p class="pull-left">&copy; 2015 <a href="http://www.bludesign.pl" target="_blank">bludesign.pl</a> &middot; <a href="#" target="_blank">Privacy</a> &middot; <a href="#" target="_blank">Terms</a></p> 	  
       <div class="end"></div>
-      
-      
       </footer>
 	</div>    <!-- /.carousel -->
     </div><!-- /.container -->
