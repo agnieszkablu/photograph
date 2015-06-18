@@ -2,9 +2,73 @@
 $font-f: 'Lato',sans-serif;
 $font-size: 1.8em;
 $text-font: 'Roboto', sans-serif;
-$basic-color: rgb(73, 85, 99);
-$text-color: rgb(250, 250, 250);
-$navbar-color: black(.1);
+$basic-color: rgb(163,218,255);
+$text-color: rgb(0,0,0);
+$background-color: rgb(138,168,25);
+$box-shadow: 2px 2px 10px rgb(24,129,153), -2px -2px 10px  rgb(24,129,153);
+$doublebox-shadow: 3px 3px 10px black(1), -3px -3px 10px black(1);
+$border-radius: 1%;
 $breakpointSmallScreen: 767px;
 $breakpointMediumScreen: 768px;
 $breakpointLargeScreen: 1200px;
+
+
+body{
+	background: $background-color;
+	background-image: url(../img/tlo2.png);
+}
+
+
+#top{
+	background: $basic-color;
+	margin: 150px 0 0;
+	text-align:center;
+	font-family: $text-font;
+	font-size: $font-size;
+	box-shadow: $box-shadow;
+	border-radius: $border-radius;
+	padding: 5px;
+}
+#bottom{
+	margin: 20px 20px;
+	width: 500px;
+	height:500px;
+	background: $basic-color;
+	box-shadow: $box-shadow;
+	border-radius: $border-radius;
+	padding: 5px;
+}
+#right{
+	margin: 20px 20px;
+	width: 500px;
+	height:500px;
+	background: $basic-color;
+	box-shadow: $box-shadow;
+	border-radius: $border-radius;
+	padding: 5px;
+}
+.end{
+	clear:both;
+}
+
+
+
+
+footer {
+    margin: 50px 0 0 0;
+	position: relative;
+	z-index: 10;
+	color: $text-color;
+	
+	@media (max-width: $breakpointSmallScreen) {
+		margin: -40px 0 0 0;
+	}
+	
+	
+	a{
+		color: $text-color;
+	}
+	a:hover{
+		text-decoration: none;
+	}
+}

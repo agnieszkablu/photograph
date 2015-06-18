@@ -30,17 +30,27 @@
 		include 'inc/menu.inc.php';
 	?>
 	<div class="container">
-		
+		<div id="top">
+        	<h1>O mnie</h1>
+        </div>
+        <div class="container">
+        <div id="bottom" class="pull-left">
+        	<h2>zdjecia</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan porttitor viverra. Aliquam consectetur in dui a venenatis. Donec sit amet mauris porttitor, mollis velit eget, ullamcorper ligula. Pellentesque fringilla, metus eget hendrerit fringilla, quam erat efficitur nibh, vel malesuada velit lacus et orci. Donec dictum id ex id molestie. Praesent mollis id lectus ultrices tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed fringilla sem ac ante vulputate, facilisis rutrum augue rhoncus. Aliquam porttitor dictum nisl, quis consequat massa convallis at. Nullam nec tellus vitae tortor feugiat aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae posuere ligula. Sed pellentesque interdum urna. Morbi tempor mi sit amet dolor tempor dictum. Curabitur vitae finibus velit, at vehicula ligula. Ut a ex ac risus egestas imperdiet tincidunt id augue.</p>
+        </div>		
+        <div id="right" class="pull-left">
+        	<h2>bla</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan porttitor viverra. Aliquam consectetur in dui a venenatis. Donec sit amet mauris porttitor, mollis velit eget, ullamcorper ligula. Pellentesque fringilla, metus eget hendrerit fringilla, quam erat efficitur nibh, vel malesuada velit lacus et orci. Donec dictum id ex id molestie. Praesent mollis id lectus ultrices tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed fringilla sem ac ante vulputate, facilisis rutrum augue rhoncus. Aliquam porttitor dictum nisl, quis consequat massa convallis at. Nullam nec tellus vitae tortor feugiat aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae posuere ligula. Sed pellentesque interdum urna. Morbi tempor mi sit amet dolor tempor dictum. Curabitur vitae finibus velit, at vehicula ligula. Ut a ex ac risus egestas imperdiet tincidunt id augue.</p>
+        </div>	
+      </div>	
+        <div class="end"></div>
 
-
-
-
-
+   
     <?php
 		include 'inc/footer.inc.php';
 	?>
-	
-    </div><!-- /.container -->
+     </div>
+    
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
 		$(function(){
