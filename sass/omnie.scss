@@ -2,11 +2,12 @@
 $font-f: 'Lato',sans-serif;
 $font-size: 1.8em;
 $text-font: 'Roboto', sans-serif;
-$basic-color: rgb(163,218,255);
-$text-color: rgb(0,0,0);
-$background-color: rgb(138,168,25);
-$box-shadow: 2px 2px 10px rgb(24,129,153), -2px -2px 10px  rgb(24,129,153);
-$doublebox-shadow: 3px 3px 10px black(1), -3px -3px 10px black(1);
+$basic-color: rgba(179,179,179,.0);
+$text-color: rgb(250,250,250);
+$background-color: rgb(20,20,20);
+$box-shadow: 2px 2px 0 rgb(24,129,153), -2px -2px 0  rgb(24,129,153),2px 2px 0 rgb(24,129,153), 2px 2px 0  rgb(24,129,153);
+$black-shadow: 0px 3px 0.8px black(.7), 3px 0 0.8px black(.7);
+$border: 1px solid black(.7); 
 $border-radius: 1%;
 $breakpointSmallScreen: 767px;
 $breakpointMediumScreen: 768px;
@@ -15,27 +16,81 @@ $breakpointLargeScreen: 1200px;
 
 body{
 	background: $background-color;
-	background-image: url(../img/tlo2.png);
+	background-image: url(../img/tlo1.png);
+	background-size:cover;
+	color:$text-color;
+	@include letterpressblack(1);  ///dodanie mixiny
 }
 
-
+.container{
+	font-family: $text-font;
+	
+	h1{
+		position:relative;
+		text-align:center;
+	
+		span {
+		  
+		  padding: 0 15px;
+		  position: relative;
+		  z-index: 1;
+		}	
+	}
+		h1:before,
+		h1:after {
+		  background: white(.4);
+		  content: "";
+		  dispaly: block;
+		  height: 10px;
+		  position: absolute;
+		  top: 50%;
+		  width: 20%;
+		}
+		h1:before {
+		  right: 90%;
+		}
+		h1:after {
+		  left: 90%;
+		}
+			
+	
+	h2{
+		padding: 0 30px;
+		text-transform:uppercase;
+		font-weight: 700;
+	}
+	
+	
+	
+	}
 #top{
 	background: $basic-color;
 	margin: 150px 0 0;
 	text-align:center;
 	font-family: $text-font;
 	font-size: $font-size;
-	box-shadow: $box-shadow;
+	-ms-box-shadow: $black-shadow;
+	-webkit-box-shadow: $black-shadow;
+	-moz-box-shadow: $black-shadow;
+	box-shadow: $black-shadow;
 	border-radius: $border-radius;
+	border-bottom:$border;
+	border-right:$border;
 	padding: 5px;
 }
-#bottom{
+#left{
 	margin: 20px 20px;
 	width: 500px;
 	height:500px;
-	background: $basic-color;
-	box-shadow: $box-shadow;
+	background: url(../img/za.jpg) no-repeat;
+	background-size: contain;
+	-ms-box-shadow: $black-shadow;
+	-webkit-box-shadow: $black-shadow;
+	-moz-box-shadow: $black-shadow;
+	box-shadow: $black-shadow;
 	border-radius: $border-radius;
+	border-bottom:$border;
+	border-right:$border;
 	padding: 5px;
 }
 #right{
@@ -43,8 +98,13 @@ body{
 	width: 500px;
 	height:500px;
 	background: $basic-color;
-	box-shadow: $box-shadow;
+	-ms-box-shadow: $black-shadow;
+	-webkit-box-shadow: $black-shadow;
+	-moz-box-shadow: $black-shadow;
+	box-shadow: $black-shadow;
 	border-radius: $border-radius;
+	border-bottom:$border;
+	border-right:$border;
 	padding: 5px;
 }
 .end{
