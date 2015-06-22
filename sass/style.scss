@@ -67,16 +67,6 @@ body{
 	}
   }
 }
- 
-.nav{
-	>li:last-child{
-		margin-left: 150px;
-	 
-	 @media (max-width: $breakpointLargeScreen){
-		margin-left: auto;
-	}
-	}
-}
 .dropdown-menu{
 
  > li > a:hover,
@@ -90,6 +80,12 @@ body{
 	color:$text-color;
 }
 }
+
+.navba .nav li > a{
+	border: 1px solid red;
+}
+
+
 /*-------------------------------------------------- */
 
 .carousel,

@@ -15,12 +15,12 @@
             <h1><span>Moja przeciętnie nieprzeciętna historia</span></h1>
         </div>
         	
-        <div class="col-sm-6 hexagon">
+        <div class="col-sm-6 col-md-6 hexagon">
             <div class="hexTop"></div>
             <div class="hexBottom"></div>
         </div>
        		
-        <div id="right" class="col-sm-6">
+        <div id="right" class="col-sm-6 col-md-6">
         	<h2>Witaj! Jestem Iza</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan porttitor viverra. Aliquam consectetur in dui a venenatis. Donec sit amet mauris porttitor, mollis velit eget, ullamcorper ligula. Pellentesque fringilla, metus eget hendrerit fringilla, quam erat efficitur nibh, vel malesuada velit lacus et orci. Donec dictum id ex id molestie. Praesent mollis id lectus ultrices tempus.
             </p>
