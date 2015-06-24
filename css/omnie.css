@@ -1,0 +1,41 @@
+body { background: #141414; background-image: url("../img/tlo1.png"); background-size: cover; color: #fafafa; text-shadow: black 0 1px 0; }
+
+.container { font-family: "Roboto", sans-serif; }
+.container h1 { position: relative; text-align: center; text-transform: uppercase; }
+.container h1 span { padding: 0 15px; position: relative; z-index: 1; }
+.container h1:before, .container h1:after { background: rgba(0, 0, 0, 0.1); border: 1px solid rgba(0, 0, 0, 0.7); -ms-box-shadow: 0px 3px 0.8px rgba(0, 0, 0, 0.7), 3px 0 0.8px rgba(0, 0, 0, 0.7); -webkit-box-shadow: 0px 3px 0.8px rgba(0, 0, 0, 0.7), 3px 0 0.8px rgba(0, 0, 0, 0.7); -moz-box-shadow: 0px 3px 0.8px rgba(0, 0, 0, 0.7), 3px 0 0.8px rgba(0, 0, 0, 0.7); box-shadow: 0px 3px 0.8px rgba(0, 0, 0, 0.7), 3px 0 0.8px rgba(0, 0, 0, 0.7), inset 50px -50px 50px rgba(0, 0, 0, 0.3); content: ""; dispaly: block; position: absolute; top: 50%; width: 20%; height: 80px; }
+.container h1:before { right: 90%; z-index: -10; }
+.container h1:after { left: 90%; }
+.container h2 { padding: 0 30px; font-weight: 700; }
+
+.hexagon { position: relative; width: 500px; height: 288.68px; margin: 144.34px 0; background-image: url("../img/iza.jpg"); background-size: auto 565.8033px; background-position: center; box-shadow: 0 0 50px rgba(0, 0, 0, 0.8), 20px -20px 50px rgba(0, 0, 0, 0.4); border-left: solid 5px rgba(51, 51, 51, 0.85); border-right: solid 5px rgba(51, 51, 51, 0.85); }
+
+.hexagon:hover { background-image: url("../img/iza2.jpg"); transition: all .8s; }
+
+.hexTop, .hexBottom { position: absolute; z-index: 1; width: 353.55px; height: 353.55px; overflow: hidden; -webkit-transform: scaleY(0.5774) rotate(-45deg); -ms-transform: scaleY(0.5774) rotate(-45deg); transform: scaleY(0.5774) rotate(-45deg); background: inherit; left: 68.22px; box-shadow: 0 0 50px rgba(0, 0, 0, 0.8), 20px -20px 50px rgba(0, 0, 0, 0.4); }
+
+/*counter transform the bg image on the caps*/
+.hexTop:after, .hexBottom:after { content: ""; position: absolute; width: 490.0000px; height: 282.9016319029166px; -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-141.4508px); -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-141.4508px); transform: rotate(45deg) scaleY(1.7321) translateY(-141.4508px); -webkit-transform-origin: 0 0; -ms-transform-origin: 0 0; transform-origin: 0 0; background: inherit; }
+
+.hexTop { top: -176.7767px; border-top: solid 7.0711px rgba(51, 51, 51, 0.85); border-right: solid 7.0711px rgba(51, 51, 51, 0.85); }
+
+.hexTop:after { background-position: center top; }
+
+.hexBottom { bottom: -176.7767px; border-bottom: solid 7.0711px rgba(51, 51, 51, 0.85); border-left: solid 7.0711px rgba(51, 51, 51, 0.85); }
+
+.hexBottom:after { background-position: center bottom; }
+
+.hexagon:after { content: ""; position: absolute; top: 2.8868px; left: 0; width: 490.0000px; height: 282.9016px; z-index: 2; background: inherit; }
+
+#top { background: rgba(179, 179, 179, 0); margin: 150px 0 50px  0; text-align: center; font-family: "Roboto", sans-serif; font-size: 1.8em; -ms-box-shadow: 0px 3px 0.8px rgba(0, 0, 0, 0.7), 3px 0 0.8px rgba(0, 0, 0, 0.7); -webkit-box-shadow: 0px 3px 0.8px rgba(0, 0, 0, 0.7), 3px 0 0.8px rgba(0, 0, 0, 0.7); -moz-box-shadow: 0px 3px 0.8px rgba(0, 0, 0, 0.7), 3px 0 0.8px rgba(0, 0, 0, 0.7); box-shadow: 0px 3px 0.8px rgba(0, 0, 0, 0.7), 3px 0 0.8px rgba(0, 0, 0, 0.7); border-radius: 1%; border-bottom: 1px solid rgba(0, 0, 0, 0.7); border-right: 1px solid rgba(0, 0, 0, 0.7); padding: 5px; }
+
+#right { margin: 160px 20px; width: 500px; height: 250px; background: rgba(179, 179, 179, 0); -ms-box-shadow: 0px 3px 0.8px rgba(0, 0, 0, 0.7), 3px 0 0.8px rgba(0, 0, 0, 0.7); -webkit-box-shadow: 0px 3px 0.8px rgba(0, 0, 0, 0.7), 3px 0 0.8px rgba(0, 0, 0, 0.7); -moz-box-shadow: 0px 3px 0.8px rgba(0, 0, 0, 0.7), 3px 0 0.8px rgba(0, 0, 0, 0.7); box-shadow: 0px 3px 0.8px rgba(0, 0, 0, 0.7), 3px 0 0.8px rgba(0, 0, 0, 0.7); border-radius: 1%; border-bottom: 1px solid rgba(0, 0, 0, 0.7); border-right: 1px solid rgba(0, 0, 0, 0.7); padding: 5px; }
+
+.end { clear: both; }
+
+footer { margin: 50px 0 0 0; position: relative; z-index: 10; color: #fafafa; }
+@media (max-width: 767px) { footer { margin: -40px 0 0 0; } }
+footer a { color: #fafafa; }
+footer a:hover { text-decoration: none; }
+
+/*# sourceMappingURL=omnie.css.map */

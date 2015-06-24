@@ -13,20 +13,19 @@
 		<div id="top" class="col-sm-12">
             <h1><span>O mnie</span></h1>
         </div>
-        	
-        <div class="col-sm-6 hexagon">
-            <div class="hexTop"></div>
-            <div class="hexBottom"></div>
+		<div class="container">
+            <ul class="flex-container">
+              <li class="flex-item">1</li>
+              <li class="flex-item">2</li>
+              <li class="flex-item">3</li>
+              <li class="flex-item">4</li>
+              <li class="flex-item">5</li>
+              <li class="flex-item">6</li>
+            </ul>
+  		</div>
+        <div id="push" class="container">
+        	<a href="javascript:void(0);">Push me!</a>
         </div>
-       		
-        <div id="right" class="col-sm-6">
-        	<h2>bla</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan porttitor viverra. Aliquam consectetur in dui a venenatis. Donec sit amet mauris porttitor, mollis velit eget, ullamcorper ligula. Pellentesque fringilla, metus eget hendrerit fringilla, quam erat efficitur nibh, vel malesuada velit lacus et orci. Donec dictum id ex id molestie. Praesent mollis id lectus ultrices tempus.
-            </p>
-        </div>		
-        <div class="end"></div>
-
-   
     <?php
 		include 'inc/footer.inc.php';
 	?>

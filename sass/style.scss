@@ -48,7 +48,7 @@ body{
   padding-right: 15px;
   padding-left: 15px;
   background: $navbar-color;
-  @include letterpress(.5);
+  @include letterpresswhite(.5);
   border-color: $text-color;
  
  @media (max-width: $breakpointSmallScreen) {

@@ -1,0 +1,101 @@
+
+///mixina ktora poprawia widocznosc liter- dodaje bialy cien
+@mixin letterpresswhite($opacity){
+    text-shadow:white($opacity) 0 1px 0;
+} 
+@mixin letterpressblack($opacity){
+    text-shadow:black($opacity) 0 1px 0;
+} 
+@mixin inline-block {
+	display: inline-block;
+	*display:inline;
+	zoom:1;	
+}
+@mixin border-radius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin transition($props:all, $speed: 0.2s, $easing: linear){
+	-webkit-transition: $props $speed $easing;
+	-moz-transition: $props $speed $easing;
+	transition: $props $speed $easing;	
+}
+@mixin box-shadow($shadows...) {  ///... wkladamy cokolwiek i pojawiaja sie po przecinkach
+	-webkit-box-shadow: $shadows;
+	-moz-box-shadow: $shadows;
+	-o-box-shadow: $shadows;
+	-ms-box-shadow: $shadows;
+	box-shadow: $shadows;
+}
+@mixin text-shadow ($color, $x: 1px, $y: 1px, $radius: 0){
+	text-shadow: $x $y $radius $color;
+}
+
+
+@mixin button($color) {
+	$bsColor: null; ///boxshadow color
+	$tColor: null;
+	$tsColor: null;///textshadow color
+	@if lightness($color) > 50%{  ///zostanie zwrocone prawda jezeli jasność koloru jest wieksza niz 50%- jasny, inaczej falsz
+		$bsColor: darken($color, 15%); ///boxshadow color
+		$tColor: lighten($color, 35%);
+		$tsColor: lighten($color, 30%);///textshadow color
+	}@else{
+		$bsColor: lighten($color, 10%); ///boxshadow color
+		$tColor: lighten($color, 35%);
+		$tsColor: lighten($color, 30%);///textshadow color
+	}
+	@include inline-block;
+	position: relative;
+	padding: 15px 35px;
+	@include border-radius(8px);
+	@include transition($speed: 0.1s);
+    color: $tColor;
+    
+	text-decoration: none;
+    background-color: $color;
+    font-weight: 700;
+    font-size: 3em;
+   
+   	@include box-shadow( 0px 9px 0px $bsColor, 0px 9px 25px rgba(0,0,0,.7) );
+   	@include text-shadow($tsColor, -1px, -1px, 0);
+    margin: 100px auto;
+	text-align: center;
+
+	
+	&:active {
+		@include box-shadow( 0px 3px 0px $bsColor, 0px 3px 6px rgba(0,0,0,.9 ));
+		top: 6px;
+	}	
+}
+
+
+///--------------------------------------------------------------
+///nie dziala?
+///mixina ktora zmienia kolor zaznaczenia na stronie danych elementów na stronie
+@mixin selection($color, $bgcolor:invert($color), $elem: ""){
+	#{$elem}::-webkit-selection{
+	color: $color;
+	background-color: $bgcolor;
+	}
+	#{$elem}::-moz-selection{
+	color: $color;
+	background-color: $bgcolor;
+	}
+	#{$elem}::selection{
+	color: $color;
+	background-color: $bgcolor;
+	}
+}
+
+
+
+///funkcje do zmiany przezroczystosci kolorow podstawowych*/
+@function black($opacity){
+    @return rgba(0,0,0,$opacity)
+}
+@function white($opacity){
+    @return rgba(255,255,255,$opacity)
+}
+

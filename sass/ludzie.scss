@@ -1,4 +1,5 @@
 @import "mixins";
+
 $font-f: 'Lato',sans-serif;
 $font-size: 1.8em;
 $text-font: 'Roboto', sans-serif;
@@ -19,20 +20,24 @@ $breakpointLargeScreen: 1200px;
 
 body{
 	background: $background-color;
-	background-image: url('../img/tlo1.png');
+	background-image: url('../img/tlo2.png');
 	background-size:cover;
 	color:$text-color;
 	@include letterpressblack(1);  ///dodanie mixiny
 }
 
+
+@include selection(black, red, h1);
+
+
 .container{
 	font-family: $text-font;
-	
 	
 	h1{
 		position:relative;
 		text-align:center;
 		text-transform:uppercase;
+		
 	
 		span {
 		  
@@ -71,88 +76,46 @@ body{
 	}
 }
 //------------------------------------------------------------//
-	.hexagon {
-	  position: relative;
-	  width: 500px; 
-	  height: 288.68px;
-	  margin: 144.34px 0;
-	  background-image: url('../img/iza.jpg');
-	  background-size: auto 565.8033px;
-	  background-position: center;
-	  box-shadow: $box-shadow-hex;
-	  border-left: $border-hex;
-	  border-right: $border-hex;
-	}
-	.hexagon:hover {
-	  background-image: url('../img/iza2.jpg');
-	  transition: all .8s;
-	}
 	
-	.hexTop,
-	.hexBottom {
-	  position: absolute;
-	  z-index: 1;
-	  width: 353.55px;
-	  height: 353.55px;
-	  overflow: hidden;
-	  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-	  -ms-transform: scaleY(0.5774) rotate(-45deg);
-	  transform: scaleY(0.5774) rotate(-45deg);
-	  background: inherit;
-	  left: 68.22px;
-	  box-shadow: $box-shadow-hex;
-	}
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
 
-	/*counter transform the bg image on the caps*/
-	.hexTop:after,
-	.hexBottom:after {
-	  content: "";
-	  position: absolute;
-	  width: 490.0000px;
-	  height: 282.9016319029166px;
-	  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-141.4508px);
-	  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-141.4508px);
-	  transform:          rotate(45deg) scaleY(1.7321) translateY(-141.4508px);
-	  -webkit-transform-origin: 0 0;
-	  -ms-transform-origin: 0 0;
-	  transform-origin: 0 0;
-	  background: inherit;
-	}
-	
-	.hexTop {
-	  top: -176.7767px;
-	  border-top: $border-hex2;
-	  border-right: $border-hex2;
-	}
-	
-	.hexTop:after {
-	  background-position: center top;
-	}
-	
-	.hexBottom {
-	  bottom: -176.7767px;
-	  border-bottom: $border-hex2;
-	  border-left: $border-hex2;
-	}
-	
-	.hexBottom:after {
-	  background-position: center bottom;
-	}
-	
-	.hexagon:after {
-	  content: "";
-	  position: absolute;
-	  top: 2.8868px;
-	  left: 0;
-	  width: 490.0000px;
-	  height: 282.9016px;
-	  z-index: 2;
-	  background: inherit;
-	}
-	
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+//---------------------------------
 
+#push>a {
+	@include button(black);
+	text-decoration: none;
+    font-weight: 700;
+    font-size: 3em;
+   	text-align: center;
+	letter-spacing: -2px;	
+}
 //---------------------------------	
-	
 #top{
 	background: $basic-color;
 	margin: 150px 0 50px  0;
@@ -168,27 +131,6 @@ body{
 	border-right:$border;
 	padding: 5px;
 }
-
-#right{
-	margin: 160px 20px;
-	width: 500px;
-	height:250px;
-	background: $basic-color;
-	-ms-box-shadow: $black-shadow;
-	-webkit-box-shadow: $black-shadow;
-	-moz-box-shadow: $black-shadow;
-	box-shadow: $black-shadow;
-	border-radius: $border-radius;
-	border-bottom:$border;
-	border-right:$border;
-	padding: 5px;
-}
-.end{
-	clear:both;
-}
-
-
-
 
 footer {
     margin: 50px 0 0 0;
