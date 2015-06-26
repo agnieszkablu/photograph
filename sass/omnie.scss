@@ -6,11 +6,10 @@ $basic-color: rgba(179,179,179,0);
 $text-color: rgb(250,250,250);
 $background-color: rgb(20,20,20);
 $box-shadow-hex: 0 0 50px black(.8), 20px -20px 50px black(.4);
-$box-shadow-inset: inset 50px -50px 50px black(.3) ;   
+$box-shadow-inset: inset 50px -50px 50px black(.3) ;
+$box-shadow-inset-iza: inset 25px 25px 105px 108px rgba(0,0,0,0.79);
 $black-shadow: 0px 3px 0.8px black(.7), 3px 0 0.8px black(.7);
-$border: 1px solid black(.7); 
-$border-hex:  solid 5px rgba(51,51,51,.85); 
-$border-hex2:  solid 7.0711px rgba(51,51,51,.85); 
+$border: 1px solid black(.7);  
 $border-radius: 1%;
 $breakpointSmallScreen: 767px;
 $breakpointMediumScreen: 768px;
@@ -54,7 +53,7 @@ body{
 		  position: absolute;
 		  top: 50%;
 		  width: 20%;
-		  height: 80px;
+		  height: 60px;
 		}
 		h1:before {
 		  right: 90%;
@@ -69,93 +68,10 @@ body{
 		padding: 0 30px;
 		font-weight: 700;
 	}
-}
-//------------------------------------------------------------//
-	.hexagon {
-	  position: relative;
-	  width: 500px; 
-	  height: 288.68px;
-	  margin: 144.34px 0;
-	  background-image: url('../img/iza.jpg');
-	  background-size: auto 565.8033px;
-	  background-position: center;
-	  box-shadow: $box-shadow-hex;
-	  border-left: $border-hex;
-	  border-right: $border-hex;
-	}
-	.hexagon:hover {
-	  background-image: url('../img/iza2.jpg');
-	  transition: all .8s;
-	}
-	
-	.hexTop,
-	.hexBottom {
-	  position: absolute;
-	  z-index: 1;
-	  width: 353.55px;
-	  height: 353.55px;
-	  overflow: hidden;
-	  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-	  -ms-transform: scaleY(0.5774) rotate(-45deg);
-	  transform: scaleY(0.5774) rotate(-45deg);
-	  background: inherit;
-	  left: 68.22px;
-	  box-shadow: $box-shadow-hex;
-	}
-
-	/*counter transform the bg image on the caps*/
-	.hexTop:after,
-	.hexBottom:after {
-	  content: "";
-	  position: absolute;
-	  width: 490.0000px;
-	  height: 282.9016319029166px;
-	  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-141.4508px);
-	  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-141.4508px);
-	  transform:          rotate(45deg) scaleY(1.7321) translateY(-141.4508px);
-	  -webkit-transform-origin: 0 0;
-	  -ms-transform-origin: 0 0;
-	  transform-origin: 0 0;
-	  background: inherit;
-	}
-	
-	.hexTop {
-	  top: -176.7767px;
-	  border-top: $border-hex2;
-	  border-right: $border-hex2;
-	}
-	
-	.hexTop:after {
-	  background-position: center top;
-	}
-	
-	.hexBottom {
-	  bottom: -176.7767px;
-	  border-bottom: $border-hex2;
-	  border-left: $border-hex2;
-	}
-	
-	.hexBottom:after {
-	  background-position: center bottom;
-	}
-	
-	.hexagon:after {
-	  content: "";
-	  position: absolute;
-	  top: 2.8868px;
-	  left: 0;
-	  width: 490.0000px;
-	  height: 282.9016px;
-	  z-index: 2;
-	  background: inherit;
-	}
-	
-
-//---------------------------------	
-	
+}	
 #top{
 	background: $basic-color;
-	margin: 150px 0 50px  0;
+	margin: 110px 0 40px  0;
 	text-align:center;
 	font-family: $text-font;
 	font-size: $font-size;
@@ -170,36 +86,40 @@ body{
 }
 
 #right{
-	margin: 160px 20px;
+	margin: 20px 20px;
 	width: 500px;
-	height:250px;
+	height: 500px;
 	background: $basic-color;
 	-ms-box-shadow: $black-shadow;
 	-webkit-box-shadow: $black-shadow;
 	-moz-box-shadow: $black-shadow;
 	box-shadow: $black-shadow;
 	border-radius: $border-radius;
-	border-bottom:$border;
-	border-right:$border;
 	padding: 5px;
 }
-.end{
-	clear:both;
+#left{
+	margin: 20px 20px;
+	width: 500px;
+	height: 500px;
+	background-image: url(../img/win-iza2.jpg);
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-ms-box-shadow: $black-shadow;
+	-webkit-box-shadow: $black-shadow;
+	-moz-box-shadow: $black-shadow;
+	box-shadow: $black-shadow;
+	border-radius: $border-radius;
+	padding: 5px;
 }
-
-
-
-
+#left:hover{
+	
+}
 footer {
     margin: 50px 0 0 0;
 	position: relative;
 	z-index: 10;
 	color: $text-color;
-	
-	@media (max-width: $breakpointSmallScreen) {
-		margin: -40px 0 0 0;
-	}
-	
 	
 	a{
 		color: $text-color;

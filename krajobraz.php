@@ -1,29 +1,34 @@
-<!doctype html>
-<html lang="pl-PL">
-<head>
-<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui ">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-	<title>Izabela Górz - moja historia</title>
+<?php
+            include 'inc/top.inc.php';
+        ?>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/omnie.css" rel="stylesheet">
+    <link href="css/ludzie.css" rel="stylesheet">
+    <title>Zdjęcia krajobrazów</title>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/mattbryson/TouchSwipe-Jquery-Plugin/1.6.6/jquery.touchSwipe.min.js"></script>
+  <script src="js/jquery.fullsizable.js"></script>
+  <script>
+    $(function() {
+      $('a.res').fullsizable({
+        detach_id: 'container'
+      });
 
+      $(document).on('fullsizable:opened', function(){
+        $("#jquery-fullsizable").swipe({
+          swipeLeft: function(){
+            $(document).trigger('fullsizable:next')
+          },
+          swipeRight: function(){
+            $(document).trigger('fullsizable:prev')
+          },
+          swipeUp: function(){
+            $(document).trigger('fullsizable:close')
+          }
+        });
+      });
+    });
+  </script>
 </head>
 <body>
 <div class="container">
@@ -31,33 +36,50 @@
             include 'inc/menu.inc.php';
         ?>
 		<div id="top" class="col-sm-12">
-            <h1><span>O mnie</span></h1>
-        </div>
-        	
-        <div class="col-sm-6 hexagon">
-            <div class="hexTop"></div>
-            <div class="hexBottom"></div>
-        </div>
-       		
-        <div id="right" class="col-sm-6">
-        	<h2>bla</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan porttitor viverra. Aliquam consectetur in dui a venenatis. Donec sit amet mauris porttitor, mollis velit eget, ullamcorper ligula. Pellentesque fringilla, metus eget hendrerit fringilla, quam erat efficitur nibh, vel malesuada velit lacus et orci. Donec dictum id ex id molestie. Praesent mollis id lectus ultrices tempus.
-            </p>
-        </div>		
-        <div class="end"></div>
-
-   
+            <h1><span>Zdjęcia krajobrazów itp</span></h1>
+        </div>         
+         	 <div class="content">
+              <div class="grid">
+              <a class="res" href="img/gory.jpg">
+              <figure class="accros">
+						<img src="img/gory.jpg" alt="Aga"/>
+						<figcaption>
+							<h2>Klik!<span> <br />full screen</span></h2>
+                            <p>Canon EOS 70D<br>ISO-100 Model: Aga</p>
+						</figcaption>			
+					</figure>
+                    </a>
+                    <a class="res" href="img/brno.jpg">
+                     <figure class="accros">
+						<img src="img/brno.jpg" alt="Aga"/>
+						<figcaption>
+							<p>Canon EOS 70D<br>ISO-100 Model: Aga</p>
+						</figcaption>			
+					</figure>        
+                    </a>
+                    <a class="res" href="img/lyzka.jpg">            
+                     <figure class="accros">
+						<img src="img/lyzka.jpg" alt="Aga"/>
+						<figcaption>
+							<p>Canon EOS 70D<br>ISO-100 Model: Aga</p>
+						</figcaption>			
+					</figure>
+                    </a>
+                    <a class="res" href="img/serce.jpg">
+                     <figure class="accros">
+						<img src="img/serce.jpg" alt="Aga"/>
+						<figcaption>
+							<p>Canon EOS 70D<br>ISO-100 Model: Aga</p>
+						</figcaption>			
+					</figure>       
+                    </a>             
+                    </div>                   
+              </div>                       
+           <div class="clearfix"></div>         
     <?php
 		include 'inc/footer.inc.php';
 	?>
 </div>
-    
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>
-		$(function(){
-			$('body').hide().fadeIn(1500);
-		});
-	</script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

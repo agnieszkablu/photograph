@@ -26,7 +26,7 @@
                 <div class="carousel-caption">
                   <h2>Przyroda.</h2>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                  <p><a class="btn btn-lg btn-primary" href="przyroda.html" role="button">Zobacz więcej zdjęć..</a></p>
+                  <p><a class="btn btn-lg btn-primary" href="przyroda.php" role="button">Zobacz więcej zdjęć..</a></p>
                 </div>
             </div>
             <div class="item">
@@ -35,7 +35,7 @@
                 <div class="carousel-caption">
                   <h2>Portrety.</h2>
                   <p>Piękniusie zdjęcia. Donec id elit non mi porta gravida at eget metus.</p>
-                  <p><a class="btn btn-lg btn-primary" href="ludzie.html" role="button">Zobacz więcej zdjęć..</a></p>
+                  <p><a class="btn btn-lg btn-primary" href="ludzie.php" role="button">Zobacz więcej zdjęć..</a></p>
 
                 </div>
             </div>
@@ -45,7 +45,7 @@
                 <div class="carousel-caption">
                   <h2>Zdjęcia krajobrazów.</h2>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                  <p><a class="btn btn-lg btn-primary" href="inne.html" role="button">Zobacz więcej zdjęć..</a></p>
+                  <p><a class="btn btn-lg btn-primary" href="krajobraz.php" role="button">Zobacz więcej zdjęć..</a></p>
                 </div>
             </div>
         </div>
