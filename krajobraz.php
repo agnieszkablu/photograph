@@ -57,9 +57,9 @@
 						</figcaption>			
 					</figure>        
                     </a>
-                    <a class="res" href="img/lyzka.jpg">            
+                    <a class="res" href="img/lyzka-min.jpg">            
                      <figure class="accros">
-						<img src="img/lyzka.jpg" alt="Aga"/>
+						<img src="img/lyzka-min.jpg" alt="Aga"/>
 						<figcaption>
 							<p>Canon EOS 70D<br>ISO-100 Model: Aga</p>
 						</figcaption>			

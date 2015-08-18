@@ -40,9 +40,9 @@
         </div>         
          	 <div class="content">
               <div class="grid">
-              <a class="res" href="img/czesiu.jpg">
+              <a class="res" href="img/czesiu-min.jpg">
               <figure class="accros">
-						<img src="img/czesiu.jpg" alt="Aga"/>
+						<img src="img/czesiu-min.jpg" alt="Aga"/>
 						<figcaption>
 							<h2>Klik!<span> <br />full screen</span></h2>
                             <p>Canon EOS 70D<br>ISO-100 Model: Aga</p>
@@ -65,9 +65,9 @@
 						</figcaption>			
 					</figure>
                     </a>
-                    <a class="res" href="img/labedz1.jpg">
+                    <a class="res" href="img/labedz-min.jpg">
                      <figure class="accros">
-						<img src="img/labedz1.jpg" alt="Aga"/>
+						<img src="img/labedz-min.jpg" alt="Aga"/>
 						<figcaption>
 							<p>Canon EOS 70D<br>ISO-100 Model: Aga</p>
 						</figcaption>			

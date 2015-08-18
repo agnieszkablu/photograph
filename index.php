@@ -2,6 +2,12 @@
     include 'inc/top.inc.php';
 ?>
 	<title>Izabela Górz FOTOGRAFIA</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+		$(function(){
+			$('body').hide().fadeIn(3000);
+		});
+	</script>
 </head>
 <body>
 	  <?php
@@ -22,7 +28,7 @@
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image: url(img/czesiu.jpg);" ></div>
+                <div class="fill" style="background-image: url(img/czesiu-min.jpg);" ></div>
                 <div class="carousel-caption">
                   <h2>Przyroda.</h2>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
@@ -31,7 +37,7 @@
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image: url(img/aga.jpg);" ></div>
+                <div class="fill" style="background-image: url(img/aga-min.jpg);" ></div>
                 <div class="carousel-caption">
                   <h2>Portrety.</h2>
                   <p>Piękniusie zdjęcia. Donec id elit non mi porta gravida at eget metus.</p>
@@ -41,7 +47,7 @@
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image: url(img/lyzka.jpg);" ></div>
+                <div class="fill" style="background-image: url(img/lyzka-min.jpg);" ></div>
                 <div class="carousel-caption">
                   <h2>Zdjęcia krajobrazów.</h2>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
@@ -61,12 +67,7 @@
      <?php
 	 	include 'inc/footer.inc.php';
 	 ?>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>
-		$(function(){
-			$('body').hide().fadeIn(3000);
-		});
-	</script>
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
